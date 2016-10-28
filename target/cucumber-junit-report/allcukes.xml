@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<testsuite failures="0" name="cucumber.runtime.formatter.JUnitFormatter" skipped="0" tests="8" time="136.297743">
+<testcase classname="HousePrice Valuation" name="ProprtyValuation" time="18.733104">
+<system-out><![CDATA[Given I navigate to "siteName" on "Mozilla".................................passed
+When I click on To HousePrice&values........................................passed
+And I enter AreaSearch as "Croydon,(London Borough)"........................passed
+And I click on "SearchButton"...............................................passed
+Then I should see search "Croydon (London Borough)".........................passed
+]]></system-out>
+</testcase>
+<testcase classname="HousePrice Valuation" name="ProprtyValuation_2" time="12.57101">
+<system-out><![CDATA[Given I navigate to "siteName" on "Chrome"..................................passed
+When I click on To HousePrice&values........................................passed
+And I enter AreaSearch as "London Bridge	Street,London SE1".................passed
+And I click on "SearchButton"...............................................passed
+Then I should see search "Croydon (London Borough"..........................passed
+]]></system-out>
+</testcase>
+<testcase classname="SearchHomeForSale" name="SearchHomeForRent" time="26.118619">
+<system-out><![CDATA[Given I navigate to "siteName" on "<browser>"...............................passed
+Given I navigate to "siteName" on "Mozilla".................................passed
+When I click on To Rent Tab.................................................passed
+And I enter AreaSearch as "Croydon,London"..................................passed
+And I enter MinPricePCM as "200"............................................passed
+And I enter MaxPricePCM as "300"............................................passed
+And I enter PropertyType as "flats".........................................passed
+And I enter BedRooms as "2".................................................passed
+And I click on "SearchButton"...............................................passed
+Then I should see search "Croydon (London Borough)".........................passed
+]]></system-out>
+</testcase>
+<testcase classname="SearchHomeForSale" name="SearchHomeForRent_2" time="26.272238">
+<system-out><![CDATA[Given I navigate to "siteName" on "<browser>"...............................passed
+Given I navigate to "siteName" on ""........................................passed
+When I click on To Rent Tab.................................................passed
+And I enter AreaSearch as "London Bridge"...................................passed
+And I enter MinPricePCM as "300"............................................passed
+And I enter MaxPricePCM as "400"............................................passed
+And I enter PropertyType as "houses"........................................passed
+And I enter BedRooms as "5".................................................passed
+And I click on "SearchButton"...............................................passed
+Then I should see search "Croydon (London Borough"..........................passed
+]]></system-out>
+</testcase>
+<testcase classname="SearchHomeForSale" name="SearchHomeForRent_3" time="16.130641">
+<system-out><![CDATA[Given I navigate to "siteName" on "<browser>"...............................passed
+Given I navigate to "siteName" on ""........................................passed
+When I click on To Rent Tab.................................................passed
+And I enter AreaSearch as "Victora,London"..................................passed
+And I enter MinPricePCM as "400"............................................passed
+And I enter MaxPricePCM as "500"............................................passed
+And I enter PropertyType as "farms_land"....................................passed
+And I enter BedRooms as "3".................................................passed
+And I click on "SearchButton"...............................................passed
+Then I should see search "Victoria".........................................passed
+]]></system-out>
+</testcase>
+<testcase classname="SearchHomeForSale" name="SearchHomeForSale" time="11.333329">
+<system-out><![CDATA[Given I navigate to "siteName" on "Chrome"..................................passed
+When I enter AreaSearch as "Croydon"........................................passed
+And I enter MinPrice as "10000".............................................passed
+And I enter MaxPrice as "50000".............................................passed
+And I enter PropertyType as "flats".........................................passed
+And I enter BedRooms as "2".................................................passed
+And I click on "SearchButton"...............................................passed
+Then I should see search "Croydon (London Borough)".........................passed
+]]></system-out>
+</testcase>
+<testcase classname="SearchHomeForSale" name="SearchHomeForSale_2" time="12.638015">
+<system-out><![CDATA[Given I navigate to "siteName" on ""........................................passed
+When I enter AreaSearch as "Croydon"........................................passed
+And I enter MinPrice as "180000"............................................passed
+And I enter MaxPrice as "2000000"...........................................passed
+And I enter PropertyType as "houses"........................................passed
+And I enter BedRooms as "5".................................................passed
+And I click on "SearchButton"...............................................passed
+Then I should see search "Croydon (London Borough"..........................passed
+]]></system-out>
+</testcase>
+<testcase classname="SearchHomeForSale" name="SearchHomeForSale_3" time="12.500787">
+<system-out><![CDATA[Given I navigate to "siteName" on ""........................................passed
+When I enter AreaSearch as "Victora,London".................................passed
+And I enter MinPrice as "50000".............................................passed
+And I enter MaxPrice as "550000"............................................passed
+And I enter PropertyType as "farms_land"....................................passed
+And I enter BedRooms as "3".................................................passed
+And I click on "SearchButton"...............................................passed
+Then I should see search "Victoria".........................................passed
+]]></system-out>
+</testcase>
+</testsuite>
